@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f3f5;
+    color: #252525;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #142b4a;
+    color: white;
+    text-align: center;
+}
+
+#current-course {
+    display: block;
+    padding: 25px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0f1010;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #f0b429;
+    color: #142b4a;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #142b4a;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #cbd2d9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    background-color: #263f60;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+
+.self-content {
+    padding: 20px;
+}
+
+.self-content img {
+    display: block;
+    width: 180px;
+    height: auto;
+    border-radius: 6px;
+    margin: 0 auto 15px;
+}
+
+.self-content p {
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.web-resources {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.web-resources ul {
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.web-resources li {
+    margin: 5px 0;
+}
+
+.web-resources a {
+    color: #0000ee;
+}
+
+footer {
+    background-color: #142b4a;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#lastModified {
+    color: #f0b429;
+}
+
+@media screen and (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #course-title {
+        font-size: 1.3rem;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+}
