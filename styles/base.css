@@ -105,6 +105,23 @@ h3 {
     line-height: 1.7;
 }
 
+#location-info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 20px;
+}
+
+#location-info img{
+    grid-column: 1 / 2;
+    width: 100%;
+    height: auto;
+}
+
+#location-info p {
+    grid-column: 2 / 3;
+}
+
 .web-resources {
     display: flex;
     justify-content: center;
